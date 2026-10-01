@@ -1,0 +1,79 @@
+[
+  {
+    "id": "cmp_01",
+    "mode": "comparison",
+    "question": "Compare DPO vs PPO in terms of training stability and computational cost",
+    "expected_dims": ["Training Stability", "Annotation Cost", "Inference Overhead", "Alignment Quality", "Failure Modes"],
+    "key_methods": ["DPO", "PPO"]
+  },
+  {
+    "id": "cmp_02",
+    "mode": "comparison",
+    "question": "What are the differences between RLHF and RLAIF in annotation cost and alignment quality?",
+    "expected_dims": ["Training Stability", "Annotation Cost", "Inference Overhead", "Alignment Quality", "Failure Modes"],
+    "key_methods": ["RLHF", "RLAIF"]
+  },
+  {
+    "id": "cmp_03",
+    "mode": "comparison",
+    "question": "Compare DPO and KTO: which has better training stability and what are the failure modes?",
+    "expected_dims": ["Training Stability", "Annotation Cost", "Inference Overhead", "Alignment Quality", "Failure Modes"],
+    "key_methods": ["DPO", "KTO"]
+  },
+  {
+    "id": "cmp_04",
+    "mode": "comparison",
+    "question": "What are the trade-offs between online and offline preference optimization for LLM alignment?",
+    "expected_dims": ["Training Stability", "Annotation Cost", "Inference Overhead", "Alignment Quality", "Failure Modes"],
+    "key_methods": ["DPO", "PPO"]
+  },
+  {
+    "id": "cmp_05",
+    "mode": "comparison",
+    "question": "Compare reward model-based RLHF versus reward-free DPO: advantages, disadvantages, and when to use each",
+    "expected_dims": ["Training Stability", "Annotation Cost", "Inference Overhead", "Alignment Quality", "Failure Modes"],
+    "key_methods": ["RLHF", "DPO"]
+  },
+  {
+    "id": "tax_01",
+    "mode": "taxonomy",
+    "question": "What are the main families of preference optimization methods for LLM alignment?",
+    "expected_dims": [],
+    "key_methods": ["DPO", "PPO", "RLHF", "KTO", "IPO"]
+  },
+  {
+    "id": "tax_02",
+    "mode": "taxonomy",
+    "question": "Survey the landscape of reward-free alignment methods and classify them by their approach",
+    "expected_dims": [],
+    "key_methods": ["DPO", "KTO", "IPO"]
+  },
+  {
+    "id": "tax_03",
+    "mode": "taxonomy",
+    "question": "What types of human feedback signals are used in LLM alignment and how do they differ?",
+    "expected_dims": [],
+    "key_methods": ["RLHF", "DPO", "KTO"]
+  },
+  {
+    "id": "tax_04",
+    "mode": "taxonomy",
+    "question": "Categorize the different approaches to aligning LLMs with human preferences",
+    "expected_dims": [],
+    "key_methods": ["RLHF", "DPO", "PPO", "SFT"]
+  },
+  {
+    "id": "gen_01",
+    "mode": "general",
+    "question": "How does the DPO objective function differ from the standard RLHF objective?",
+    "expected_dims": [],
+    "key_methods": ["DPO", "RLHF"]
+  },
+  {
+    "id": "gen_02",
+    "mode": "general",
+    "question": "What is reward hacking in PPO-based RLHF and how can it be mitigated?",
+    "expected_dims": [],
+    "key_methods": ["PPO", "RLHF"]
+  }
+]

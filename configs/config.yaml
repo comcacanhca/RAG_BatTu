@@ -1,0 +1,95 @@
+# ============================================================
+# arXiv RAG QA System - 配置文件（纯本地版）
+# 不需要 Docker / vLLM / 任何外部服务
+# ============================================================
+
+# --- arXiv Fetcher ---
+arxiv:
+  max_papers: 100
+  sort_by: "submittedDate"       # relevance / lastUpdatedDate / submittedDate
+  sort_order: "descending"
+  categories:
+    - "cs.LG"
+    - "cs.CL"
+    - "cs.CV"
+    - "cs.AI"
+  download_dir: "data/pdfs"
+
+# --- PDF Parser ---
+parser:
+  output_dir: "data/parsed"
+  chunk_size: 1200                 # 512→1200: 避免把方法/实验切断
+  chunk_overlap: 200               # 64→200: 更大重叠保持上下文连贯
+  min_chunk_length: 80             # 50→80: 更严格过滤碎片
+
+# --- Embedding ---
+embedding:
+  model_name: "BAAI/bge-large-en-v1.5"
+  device: "cuda:0"               # GPU 0: embedding + reranker
+  batch_size: 64
+  max_seq_length: 512
+  normalize: true
+  query_prefix: "Represent this sentence for searching relevant passages: "
+
+# --- Reranker ---
+reranker:
+  model_name: "BAAI/bge-reranker-large"
+  device: "cuda:0"               # 和 embedding 共享 GPU 0
+  batch_size: 32
+  top_k: 8
+
+# --- FAISS（替代 Qdrant，纯本地） ---
+faiss:
+  vector_size: 1024              # bge-large-en-v1.5 输出维度
+  index_type: "flat"             # flat=精确搜索 | ivf=近似(数据量>10万时考虑)
+  use_gpu: false                 # FAISS GPU 加速（可选，一般不需要）
+  save_dir: "data/faiss_index"   # 索引持久化目录
+
+# --- BM25 ---
+bm25:
+  top_k: 20
+
+# --- Retrieval ---
+retrieval:
+  dense_top_k: 20
+  sparse_top_k: 20
+  rrf_k: 60
+  final_top_k: 20
+
+# --- LLM Generation ---
+llm:
+  # === 本地 HuggingFace Transformers（默认） ===
+  backend: "local"               # "local" = HF Transformers | "api" = OpenAI 兼容 API
+  model: "Qwen/Qwen2.5-7B-Instruct"
+  device: "auto"                 # "auto" = 多卡自动分布 | "cuda:1" = 单卡
+  max_new_tokens: 1024
+  temperature: 0.1
+  top_p: 0.9
+  torch_dtype: "float16"         # float16 / bfloat16 / auto
+  num_citations: 5               # 目标引用数 (3-8)
+
+  # === 备选: API 模式（取消注释切换） ===
+  # backend: "api"
+  # api_base: "http://localhost:11434/v1"   # Ollama
+  # api_key: "not-needed"
+  # model: "qwen2.5:7b"
+
+  # === 备选: DeepSeek API ===
+  # backend: "api"
+  # api_base: "https://api.deepseek.com/v1"
+  # api_key: "sk-your-key-here"
+  # model: "deepseek-chat"
+
+# --- Agentic Pipeline ---
+agents:
+  query_planner: true      # 插入点 1: 多子查询规划（comparison/taxonomy only）
+  gap_detector: true       # 插入点 2: 检索后覆盖度检测（comparison/taxonomy only）
+  self_critique: true      # 插入点 3: 生成后自我批评（comparison/taxonomy only）
+
+# --- Evaluation ---
+eval:
+  qa_file: "data/eval_qa.json"
+  metrics:
+    - "recall@5"
+    - "recall@10"
+    - "mrr"

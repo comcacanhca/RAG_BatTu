@@ -1,0 +1,69 @@
+[
+  {
+    "arxiv_id": "2412.15244",
+    "title": "MPPO: Multi Pair-wise Preference Optimization for LLMs with Arbitrary Negative Samples",
+    "authors": [
+      "Shuo Xie",
+      "Fangzhi Zhu",
+      "Jiahui Wang",
+      "Lulu Wen",
+      "Wei Dai",
+      "Xiaowei Chen",
+      "Junxiong Zhu",
+      "Kai Zhou",
+      "Bo Zheng"
+    ],
+    "abstract": "Aligning Large Language Models (LLMs) with human feedback is crucial for their development. Existing preference optimization methods such as DPO and KTO, while improved based on Reinforcement Learning from Human Feedback (RLHF), are inherently derived from PPO, requiring a reference model that adds GPU memory resources and relies heavily on abundant preference data. Meanwhile, current preference optimization research mainly targets single-question scenarios with two replies, neglecting optimization with multiple replies, which leads to a waste of data in the application. This study introduces the MPPO algorithm, which leverages the average likelihood of model responses to fit the reward function and maximizes the utilization of preference data. Through a comparison of Point-wise, Pair-wise, and List-wise implementations, we found that the Pair-wise approach achieves the best performance, significantly enhancing the quality of model responses. Experimental results demonstrate MPPO's outstanding performance across various benchmarks. On MT-Bench, MPPO outperforms DPO, ORPO, and SimPO. Notably, on Arena-Hard, MPPO surpasses DPO and ORPO by substantial margins. These achievements underscore the remarkable advantages of MPPO in preference optimization tasks.",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2024-12-13T14:18:58+00:00",
+    "updated": "2024-12-13T14:18:58+00:00",
+    "pdf_url": "https://arxiv.org/pdf/2412.15244v1",
+    "local_pdf_path": "/home/yt237/rag/data/pdfs/2412_15244.pdf"
+  },
+  {
+    "arxiv_id": "2408.15339",
+    "title": "UNA: Unifying Alignments of RLHF/PPO, DPO and KTO by a Generalized Implicit Reward Function",
+    "authors": [
+      "Zhichao Wang",
+      "Bin Bi",
+      "Can Huang",
+      "Shiva Kumar Pentyala",
+      "Zixu James Zhu",
+      "Sitaram Asur",
+      "Na Claire Cheng"
+    ],
+    "abstract": "An LLM is pretrained on trillions of tokens, but the pretrained LLM may still generate undesired responses. To solve this problem, alignment techniques such as RLHF, DPO and KTO are proposed. However, these alignment techniques have limitations. For example, RLHF requires training the reward model and policy separately, which is complex, time-consuming, memory intensive and unstable during training processes. DPO proposes a mapping between an optimal policy and a reward, greatly simplifying the training process of RLHF. However, it can not take full advantages of a reward model and it is limited to pairwise preference data.   In this paper, we propose \\textbf{UN}ified \\textbf{A}lignment (UNA) which unifies RLHF/PPO, DPO and KTO. Firstly, we mathematically prove that given the classical RLHF objective, the optimal policy is induced by a generalize implicit reward function. With this novel mapping between a reward model and an optimal policy, UNA can 1. unify RLHF/PPO, DPO and KTO into a supervised learning of minimizing the difference between an implicit reward and an explicit reward; 2. outperform RLHF/PPO while simplify, stabilize, speed up and reduce memory burden of RL fine-tuning process; 3. accommodate different feedback types including pairwise, binary and scalar feedback. Downstream experiments show UNA outperforms DPO, KTO and RLHF.",
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "published": "2024-08-27T18:04:07+00:00",
+    "updated": "2025-04-05T20:59:10+00:00",
+    "pdf_url": "https://arxiv.org/pdf/2408.15339v3",
+    "local_pdf_path": "/home/yt237/rag/data/pdfs/2408_15339.pdf"
+  },
+  {
+    "arxiv_id": "2408.10642",
+    "title": "Minor SFT loss for LLM fine-tune to increase performance and reduce model deviation",
+    "authors": [
+      "Shiming Xie",
+      "Hong Chen",
+      "Fred Yu",
+      "Zeye Sun",
+      "Xiuyu Wu"
+    ],
+    "abstract": "Instruct LLM provide a paradigm used in large scale language model to align LLM to human preference. The paradigm contains supervised fine tuning and reinforce learning from human feedback. This paradigm is also used in downstream scenarios to adapt LLM to specific corpora and applications. Comparing to SFT, there are many efforts focused on RLHF and several algorithms being proposed, such as PPO, DPO, IPO, KTO, MinorDPO and etc. Meanwhile most efforts for SFT are focused on how to collect, filter and mix high quality data. In this article with insight from DPO and MinorDPO, we propose a training metric for SFT to measure the discrepancy between the optimized model and the original model, and a loss function MinorSFT that can increase the training effectiveness, and reduce the discrepancy between the optimized LLM and original LLM.",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "published": "2024-08-20T08:32:44+00:00",
+    "updated": "2024-08-20T08:32:44+00:00",
+    "pdf_url": "https://arxiv.org/pdf/2408.10642v1",
+    "local_pdf_path": "/home/yt237/rag/data/pdfs/2408_10642.pdf"
+  }
+]

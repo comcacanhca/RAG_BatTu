@@ -1,0 +1,994 @@
+[
+  {
+    "question": "Compare DPO vs PPO in terms of training stability and computational cost",
+    "mode": "comparison",
+    "key_terms": [
+      "computational",
+      "cost",
+      "dpo",
+      "ppo",
+      "stability",
+      "terms",
+      "training"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2412.15244",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T13:50:50.993668"
+  },
+  {
+    "question": "What are the differences between RLHF and RLAIF in annotation cost and alignment quality?",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "annotation",
+      "cost",
+      "quality",
+      "rlaif",
+      "rlhf"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2408.10642",
+      "2412.15244"
+    ],
+    "timestamp": "2026-03-03T13:51:21.408055"
+  },
+  {
+    "question": "Compare DPO and KTO: which has better training stability and what are the failure modes?",
+    "mode": "comparison",
+    "key_terms": [
+      "better",
+      "dpo",
+      "failure",
+      "has",
+      "kto",
+      "modes",
+      "stability",
+      "training"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.10642",
+      "2408.15339"
+    ],
+    "timestamp": "2026-03-03T13:51:34.728171"
+  },
+  {
+    "question": "What are the trade-offs between online and offline preference optimization for LLM alignment?",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "llm",
+      "offline",
+      "offs",
+      "online",
+      "optimization",
+      "preference",
+      "trade"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2412.15244",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T13:51:59.314577"
+  },
+  {
+    "question": "Compare reward model-based RLHF versus reward-free DPO: advantages, disadvantages, and when to use each",
+    "mode": "comparison",
+    "key_terms": [
+      "advantages",
+      "based",
+      "disadvantages",
+      "dpo",
+      "each",
+      "free",
+      "model",
+      "reward",
+      "rlhf",
+      "use"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2412.15244",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T13:52:12.870246"
+  },
+  {
+    "question": "What are the main families of preference optimization methods for LLM alignment?",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "families",
+      "llm",
+      "main",
+      "methods",
+      "optimization",
+      "preference"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2412.15244",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T13:52:42.558038"
+  },
+  {
+    "question": "Survey the landscape of reward-free alignment methods and classify them by their approach",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "approach",
+      "classify",
+      "free",
+      "landscape",
+      "methods",
+      "reward",
+      "survey",
+      "their",
+      "them"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.15339",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T13:53:06.178358"
+  },
+  {
+    "question": "What types of human feedback signals are used in LLM alignment and how do they differ?",
+    "mode": "comparison",
+    "key_terms": [
+      "alignment",
+      "differ",
+      "feedback",
+      "human",
+      "llm",
+      "signals",
+      "they",
+      "types",
+      "used"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.15339",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T13:53:25.627354"
+  },
+  {
+    "question": "Categorize the different approaches to aligning LLMs with human preferences",
+    "mode": "taxonomy",
+    "key_terms": [
+      "aligning",
+      "approaches",
+      "categorize",
+      "different",
+      "human",
+      "llms",
+      "preferences"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2408.10642",
+      "2412.15244"
+    ],
+    "timestamp": "2026-03-03T13:53:47.657817"
+  },
+  {
+    "question": "How does the DPO objective function differ from the standard RLHF objective?",
+    "mode": "comparison",
+    "key_terms": [
+      "differ",
+      "dpo",
+      "from",
+      "function",
+      "objective",
+      "rlhf",
+      "standard"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.15339",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T13:54:07.446956"
+  },
+  {
+    "question": "Compare DPO vs PPO in terms of training stability and computational cost",
+    "mode": "comparison",
+    "key_terms": [
+      "computational",
+      "cost",
+      "dpo",
+      "ppo",
+      "stability",
+      "terms",
+      "training"
+    ],
+    "cited_arxiv_ids": [
+      "2408.10642",
+      "2408.15339",
+      "2412.15244"
+    ],
+    "timestamp": "2026-03-03T13:54:29.528269"
+  },
+  {
+    "question": "What are the differences between RLHF and RLAIF in annotation cost and alignment quality?",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "annotation",
+      "cost",
+      "quality",
+      "rlaif",
+      "rlhf"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2408.10642",
+      "2412.15244"
+    ],
+    "timestamp": "2026-03-03T13:55:05.158092"
+  },
+  {
+    "question": "Compare DPO and KTO: which has better training stability and what are the failure modes?",
+    "mode": "comparison",
+    "key_terms": [
+      "better",
+      "dpo",
+      "failure",
+      "has",
+      "kto",
+      "modes",
+      "stability",
+      "training"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.10642",
+      "2408.15339"
+    ],
+    "timestamp": "2026-03-03T13:55:22.230218"
+  },
+  {
+    "question": "Compare DPO vs PPO in terms of training stability and computational cost",
+    "mode": "comparison",
+    "key_terms": [
+      "computational",
+      "cost",
+      "dpo",
+      "ppo",
+      "stability",
+      "terms",
+      "training"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2408.10642",
+      "2412.15244"
+    ],
+    "timestamp": "2026-03-03T13:57:05.859227"
+  },
+  {
+    "question": "What are the differences between RLHF and RLAIF in annotation cost and alignment quality?",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "annotation",
+      "cost",
+      "quality",
+      "rlaif",
+      "rlhf"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2408.10642",
+      "2412.15244"
+    ],
+    "timestamp": "2026-03-03T13:57:17.926479"
+  },
+  {
+    "question": "Compare DPO and KTO: which has better training stability and what are the failure modes?",
+    "mode": "comparison",
+    "key_terms": [
+      "better",
+      "dpo",
+      "failure",
+      "has",
+      "kto",
+      "modes",
+      "stability",
+      "training"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2412.15244",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T13:57:28.291266"
+  },
+  {
+    "question": "What are the trade-offs between online and offline preference optimization for LLM alignment?",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "llm",
+      "offline",
+      "offs",
+      "online",
+      "optimization",
+      "preference",
+      "trade"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.15339",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T13:57:42.881480"
+  },
+  {
+    "question": "Compare reward model-based RLHF versus reward-free DPO: advantages, disadvantages, and when to use each",
+    "mode": "comparison",
+    "key_terms": [
+      "advantages",
+      "based",
+      "disadvantages",
+      "dpo",
+      "each",
+      "free",
+      "model",
+      "reward",
+      "rlhf",
+      "use"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T13:57:54.462607"
+  },
+  {
+    "question": "What are the main families of preference optimization methods for LLM alignment?",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "families",
+      "llm",
+      "main",
+      "methods",
+      "optimization",
+      "preference"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.15339"
+    ],
+    "timestamp": "2026-03-03T13:58:08.295247"
+  },
+  {
+    "question": "Survey the landscape of reward-free alignment methods and classify them by their approach",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "approach",
+      "classify",
+      "free",
+      "landscape",
+      "methods",
+      "reward",
+      "survey",
+      "their",
+      "them"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.15339"
+    ],
+    "timestamp": "2026-03-03T13:58:22.152226"
+  },
+  {
+    "question": "What types of human feedback signals are used in LLM alignment and how do they differ?",
+    "mode": "comparison",
+    "key_terms": [
+      "alignment",
+      "differ",
+      "feedback",
+      "human",
+      "llm",
+      "signals",
+      "they",
+      "types",
+      "used"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2408.10642",
+      "2412.15244"
+    ],
+    "timestamp": "2026-03-03T13:58:39.260382"
+  },
+  {
+    "question": "Categorize the different approaches to aligning LLMs with human preferences",
+    "mode": "taxonomy",
+    "key_terms": [
+      "aligning",
+      "approaches",
+      "categorize",
+      "different",
+      "human",
+      "llms",
+      "preferences"
+    ],
+    "cited_arxiv_ids": [
+      "2408.10642",
+      "2412.15244",
+      "2408.15339"
+    ],
+    "timestamp": "2026-03-03T13:59:01.438521"
+  },
+  {
+    "question": "Compare DPO vs PPO in terms of training stability and computational cost",
+    "mode": "comparison",
+    "key_terms": [
+      "computational",
+      "cost",
+      "dpo",
+      "ppo",
+      "stability",
+      "terms",
+      "training"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2412.15244",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T13:59:14.279605"
+  },
+  {
+    "question": "What are the differences between RLHF and RLAIF in annotation cost and alignment quality?",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "annotation",
+      "cost",
+      "quality",
+      "rlaif",
+      "rlhf"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2408.10642",
+      "2412.15244"
+    ],
+    "timestamp": "2026-03-03T13:59:45.157851"
+  },
+  {
+    "question": "Compare DPO and KTO: which has better training stability and what are the failure modes?",
+    "mode": "comparison",
+    "key_terms": [
+      "better",
+      "dpo",
+      "failure",
+      "has",
+      "kto",
+      "modes",
+      "stability",
+      "training"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.10642",
+      "2408.15339"
+    ],
+    "timestamp": "2026-03-03T13:59:57.349645"
+  },
+  {
+    "question": "What are the trade-offs between online and offline preference optimization for LLM alignment?",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "llm",
+      "offline",
+      "offs",
+      "online",
+      "optimization",
+      "preference",
+      "trade"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2412.15244",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T14:00:24.372316"
+  },
+  {
+    "question": "Compare reward model-based RLHF versus reward-free DPO: advantages, disadvantages, and when to use each",
+    "mode": "comparison",
+    "key_terms": [
+      "advantages",
+      "based",
+      "disadvantages",
+      "dpo",
+      "each",
+      "free",
+      "model",
+      "reward",
+      "rlhf",
+      "use"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2412.15244",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T14:00:37.054424"
+  },
+  {
+    "question": "What are the main families of preference optimization methods for LLM alignment?",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "families",
+      "llm",
+      "main",
+      "methods",
+      "optimization",
+      "preference"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2412.15244",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T14:01:06.153722"
+  },
+  {
+    "question": "Survey the landscape of reward-free alignment methods and classify them by their approach",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "approach",
+      "classify",
+      "free",
+      "landscape",
+      "methods",
+      "reward",
+      "survey",
+      "their",
+      "them"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.15339",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T14:01:31.957129"
+  },
+  {
+    "question": "What types of human feedback signals are used in LLM alignment and how do they differ?",
+    "mode": "comparison",
+    "key_terms": [
+      "alignment",
+      "differ",
+      "feedback",
+      "human",
+      "llm",
+      "signals",
+      "they",
+      "types",
+      "used"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.15339",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T14:01:50.131729"
+  },
+  {
+    "question": "Categorize the different approaches to aligning LLMs with human preferences",
+    "mode": "taxonomy",
+    "key_terms": [
+      "aligning",
+      "approaches",
+      "categorize",
+      "different",
+      "human",
+      "llms",
+      "preferences"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2408.10642",
+      "2412.15244"
+    ],
+    "timestamp": "2026-03-03T14:02:12.807609"
+  },
+  {
+    "question": "Compare DPO vs PPO in terms of training stability and computational cost",
+    "mode": "comparison",
+    "key_terms": [
+      "computational",
+      "cost",
+      "dpo",
+      "ppo",
+      "stability",
+      "terms",
+      "training"
+    ],
+    "cited_arxiv_ids": [
+      "2408.10642",
+      "2408.15339",
+      "2412.15244"
+    ],
+    "timestamp": "2026-03-03T14:02:35.428423"
+  },
+  {
+    "question": "What are the differences between RLHF and RLAIF in annotation cost and alignment quality?",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "annotation",
+      "cost",
+      "quality",
+      "rlaif",
+      "rlhf"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2408.10642",
+      "2412.15244"
+    ],
+    "timestamp": "2026-03-03T14:03:02.625215"
+  },
+  {
+    "question": "Compare DPO and KTO: which has better training stability and what are the failure modes?",
+    "mode": "comparison",
+    "key_terms": [
+      "better",
+      "dpo",
+      "failure",
+      "has",
+      "kto",
+      "modes",
+      "stability",
+      "training"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.10642",
+      "2408.15339"
+    ],
+    "timestamp": "2026-03-03T14:03:18.813282"
+  },
+  {
+    "question": "What are the trade-offs between online and offline preference optimization for LLM alignment?",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "llm",
+      "offline",
+      "offs",
+      "online",
+      "optimization",
+      "preference",
+      "trade"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2412.15244",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T14:03:51.891608"
+  },
+  {
+    "question": "Compare reward model-based RLHF versus reward-free DPO: advantages, disadvantages, and when to use each",
+    "mode": "comparison",
+    "key_terms": [
+      "advantages",
+      "based",
+      "disadvantages",
+      "dpo",
+      "each",
+      "free",
+      "model",
+      "reward",
+      "rlhf",
+      "use"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2412.15244",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T14:04:08.901901"
+  },
+  {
+    "question": "What are the main families of preference optimization methods for LLM alignment?",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "families",
+      "llm",
+      "main",
+      "methods",
+      "optimization",
+      "preference"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2412.15244",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T14:04:42.064523"
+  },
+  {
+    "question": "Survey the landscape of reward-free alignment methods and classify them by their approach",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "approach",
+      "classify",
+      "free",
+      "landscape",
+      "methods",
+      "reward",
+      "survey",
+      "their",
+      "them"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.15339",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T14:05:11.779951"
+  },
+  {
+    "question": "What types of human feedback signals are used in LLM alignment and how do they differ?",
+    "mode": "comparison",
+    "key_terms": [
+      "alignment",
+      "differ",
+      "feedback",
+      "human",
+      "llm",
+      "signals",
+      "they",
+      "types",
+      "used"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.15339",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T14:05:32.132268"
+  },
+  {
+    "question": "Categorize the different approaches to aligning LLMs with human preferences",
+    "mode": "taxonomy",
+    "key_terms": [
+      "aligning",
+      "approaches",
+      "categorize",
+      "different",
+      "human",
+      "llms",
+      "preferences"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2408.10642",
+      "2412.15244"
+    ],
+    "timestamp": "2026-03-03T14:06:22.983909"
+  },
+  {
+    "question": "Compare DPO vs PPO in terms of training stability and computational cost",
+    "mode": "comparison",
+    "key_terms": [
+      "computational",
+      "cost",
+      "dpo",
+      "ppo",
+      "stability",
+      "terms",
+      "training"
+    ],
+    "cited_arxiv_ids": [
+      "2408.10642",
+      "2408.15339",
+      "2412.15244"
+    ],
+    "timestamp": "2026-03-03T14:07:06.853065"
+  },
+  {
+    "question": "What are the differences between RLHF and RLAIF in annotation cost and alignment quality?",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "annotation",
+      "cost",
+      "quality",
+      "rlaif",
+      "rlhf"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2408.10642",
+      "2412.15244"
+    ],
+    "timestamp": "2026-03-03T14:08:32.510544"
+  },
+  {
+    "question": "Compare DPO and KTO: which has better training stability and what are the failure modes?",
+    "mode": "comparison",
+    "key_terms": [
+      "better",
+      "dpo",
+      "failure",
+      "has",
+      "kto",
+      "modes",
+      "stability",
+      "training"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.10642",
+      "2408.15339"
+    ],
+    "timestamp": "2026-03-03T14:09:08.089437"
+  },
+  {
+    "question": "What are the trade-offs between online and offline preference optimization for LLM alignment?",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "llm",
+      "offline",
+      "offs",
+      "online",
+      "optimization",
+      "preference",
+      "trade"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2412.15244",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T14:10:21.262717"
+  },
+  {
+    "question": "Compare reward model-based RLHF versus reward-free DPO: advantages, disadvantages, and when to use each",
+    "mode": "comparison",
+    "key_terms": [
+      "advantages",
+      "based",
+      "disadvantages",
+      "dpo",
+      "each",
+      "free",
+      "model",
+      "reward",
+      "rlhf",
+      "use"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2412.15244",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T14:10:50.600444"
+  },
+  {
+    "question": "What are the main families of preference optimization methods for LLM alignment?",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "families",
+      "llm",
+      "main",
+      "methods",
+      "optimization",
+      "preference"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2412.15244",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T14:12:08.051279"
+  },
+  {
+    "question": "Survey the landscape of reward-free alignment methods and classify them by their approach",
+    "mode": "taxonomy",
+    "key_terms": [
+      "alignment",
+      "approach",
+      "classify",
+      "free",
+      "landscape",
+      "methods",
+      "reward",
+      "survey",
+      "their",
+      "them"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.15339",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T14:13:25.170020"
+  },
+  {
+    "question": "What types of human feedback signals are used in LLM alignment and how do they differ?",
+    "mode": "comparison",
+    "key_terms": [
+      "alignment",
+      "differ",
+      "feedback",
+      "human",
+      "llm",
+      "signals",
+      "they",
+      "types",
+      "used"
+    ],
+    "cited_arxiv_ids": [
+      "2412.15244",
+      "2408.15339",
+      "2408.10642"
+    ],
+    "timestamp": "2026-03-03T14:14:06.314156"
+  },
+  {
+    "question": "Categorize the different approaches to aligning LLMs with human preferences",
+    "mode": "taxonomy",
+    "key_terms": [
+      "aligning",
+      "approaches",
+      "categorize",
+      "different",
+      "human",
+      "llms",
+      "preferences"
+    ],
+    "cited_arxiv_ids": [
+      "2408.15339",
+      "2408.10642",
+      "2412.15244"
+    ],
+    "timestamp": "2026-03-03T14:15:57.259476"
+  },
+  {
+    "question": "Compare DPO vs PPO in terms of training stability and failure modes",
+    "mode": "comparison",
+    "key_terms": [
+      "dpo",
+      "failure",
+      "modes",
+      "ppo",
+      "stability",
+      "terms",
+      "training"
+    ],
+    "cited_arxiv_ids": [
+      "2408.10642",
+      "2408.15339",
+      "2412.15244"
+    ],
+    "timestamp": "2026-03-03T14:23:02.193120"
+  }
+]

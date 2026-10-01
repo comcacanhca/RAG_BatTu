@@ -1,0 +1,34 @@
+# === Core ===
+PyMuPDF>=1.23.0
+arxiv>=2.1.0
+requests>=2.31.0
+
+# === Embedding & Reranker ===
+sentence-transformers>=2.2.2
+torch>=2.1.0
+transformers>=4.37.0       # 本地加载 LLM
+
+# === Vector Store（二选一） ===
+faiss-cpu>=1.7.4            # CPU 版，开箱即用
+# faiss-gpu>=1.7.4          # GPU 版，有 CUDA 环境时用这个（更快）
+
+# === Sparse Retrieval ===
+rank-bm25>=0.2.2
+
+# === Text Processing ===
+langchain-text-splitters>=0.0.1
+
+# === Web UI ===
+gradio>=4.0.0
+
+# === Utils ===
+pyyaml>=6.0
+tqdm>=4.66.0
+rich>=13.0.0
+
+# === 可选: API 模式时需要 ===
+# openai>=1.10.0
+
+# === 可选: 评测 ===
+# ragas>=0.1.0
+# datasets>=2.14.0
